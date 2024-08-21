@@ -1,0 +1,110 @@
+/* Reset some default browser styles */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Section styling */
+.portfolio, .stock-details {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Heading styling within sections */
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Form styling */
+#stock-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#stock-symbol, #stock-amount {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Portfolio list styling */
+#portfolio-list {
+    list-style: none;
+    padding: 0;
+}
+
+#portfolio-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portfolio-list button {
+    background-color: #dc3545;
+}
+
+#portfolio-list button:hover {
+    background-color: #c82333;
+}
+
+/* Stock details section styling */
+#details {
+    font-size: 16px;
+    color: #555;
+}

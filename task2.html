@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Tracker</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <header>
+        <h1>Stock Portfolio Tracker</h1>
+    </header>
+    <main>
+        <section class="portfolio">
+            <h2>Your Portfolio</h2>
+            <form id="stock-form">
+                <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol" required>
+                <input type="number" id="stock-amount" placeholder="Amount of Shares" required>
+                <button type="submit">Add Stock</button>
+            </form>
+            <ul id="portfolio-list"></ul>
+        </section>
+        <section class="stock-details">
+            <h2>Stock Details</h2>
+            <div id="details">Select a stock to see details</div>
+        </section>
+    </main>
+    <script src="task2.js"></script>
+</body>
+</html>
